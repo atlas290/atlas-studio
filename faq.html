@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — ATLAS STUDIO</title>
+<meta name="description" content="Questions fréquentes sur les services d'ATLAS STUDIO : délais, tarifs, paiement, hébergement, maintenance, modifications.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+.faq-item summary { list-style: none; cursor: pointer; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; letter-spacing: 0.04em; color: var(--text); position: relative; padding-right: 40px; line-height: 1.35; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; position: absolute; right: 0; top: 0; color: var(--gold); font-size: 28px; font-weight: 300; transition: transform 0.3s; }
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item p { margin-top: 16px; font-size: 16px; line-height: 1.7; color: var(--text-dim); }
+</style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="brand">
+    <svg viewBox="0 0 100 100" width="32" height="32" style="color: var(--text);">
+      <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="3.5"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="currentColor" stroke-width="3.5"/>
+      <path d="M 50 22 C 50 46, 52 48, 78 50 C 52 52, 50 54, 50 78 C 50 54, 48 52, 22 50 C 48 48, 50 46, 50 22 Z" fill="currentColor"/>
+    </svg>
+    <span class="brand-name">ATLAS STUDIO</span>
+  </a>
+  <button class="menu-btn" id="menuBtn">Menu</button>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" id="menuClose" aria-label="Fermer">&times;</button>
+  <nav class="menu-nav">
+    <a href="index.html">Accueil</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<section class="section" style="padding-top:160px;padding-bottom:40px;text-align:center;">
+  <div class="container reveal">
+    <span class="eyebrow">FAQ</span>
+    <h1 style="margin-bottom:16px;">Questions fréquentes.</h1>
+    <p style="max-width:480px;margin:0 auto;font-size:16px;">Tout ce que vous devez savoir avant de lancer votre projet avec nous.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <details class="faq-item reveal">
+      <summary>Quelles sont les différences entre vos offres ?</summary>
+      <p>L'offre <strong>Menu Digital (75 000 FCFA)</strong> est une page unique avec le menu et le bouton de commande WhatsApp. L'offre <strong>Starter (100 000 FCFA)</strong> est un site de 3 pages pour exister. L'offre <strong>Pro (200 000 FCFA)</strong> est notre best-seller : 5 pages, galerie/menu, et intégration WhatsApp. Enfin, l'offre <strong>Signature (350 000 FCFA)</strong> est un site sur-mesure de 10 pages avec des animations exclusives.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Combien de temps pour avoir mon site ?</summary>
+      <p>7 jours en moyenne pour les offres Menu, Starter et Pro. 10 à 14 jours pour l'offre Signature. Le délai démarre une fois tous les textes et images fournis.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Puis-je payer en plusieurs fois ?</summary>
+      <p>Oui. 50 % à la commande pour lancer le projet, 50 % à la livraison finale. Pour les projets importants (Signature), on peut échelonner en 3 fois.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Quels moyens de paiement acceptez-vous ?</summary>
+      <p>Mobile Money (MTN, Moov, Celtiis), virement bancaire, ou espèces.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Le nom de domaine et l'hébergement sont inclus ?</summary>
+      <p>Oui, pour 1 an, dans les offres Pro et Signature. Pour l'offre Starter et Menu, l'hébergement est inclus, et on peut s'occuper du domaine pour un petit supplément.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Qu'est-ce que la maintenance à 10 000 FCFA/mois ?</summary>
+      <p>C'est la tranquillité d'esprit. On s'occupe de l'hébergement, des sauvegardes, et on fait jusqu'à 2 modifications par mois (changer un plat sur le menu, une photo, un texte). Support WhatsApp sous 48h. Sans engagement.</p>
+    </details>
+
+    <details class="faq-item reveal">
+      <summary>Puis-je ajouter des options plus tard ?</summary>
+      <p>Oui. Google Maps, galerie photos, réservation WhatsApp... Vous pouvez ajouter n'importe quelle option à tout moment, même après la livraison. Chaque ajout fait l'objet d'un devis.</p>
+    </details>
+
+    <details class="faq-item reveal" style="border-bottom:none;">
+      <summary>Que se passe-t-il si je ne suis pas satisfait ?</summary>
+      <p>On retravaille le design jusqu'à ce que ce soit parfait. On ne livre pas un site dont vous n'êtes pas fier.</p>
+    </details>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container reveal">
+    <h2>Une autre question ?</h2>
+    <p>Posez-la directement. Je réponds personnellement sous 24h.</p>
+    <a href="https://wa.me/2290167020586" target="_blank" rel="noopener" class="btn">Démarrer sur WhatsApp</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">ATLAS STUDIO</div>
+    <div class="footer-slogan">L'excellence digitale au Bénin.</div>
+    <div class="footer-contacts">
+      <a href="https://wa.me/2290167020586" target="_blank" rel="noopener">+229 01 67 02 05 86</a>
+      <a href="mailto:atlasstudio216@gmail.com">atlasstudio216@gmail.com</a>
+    </div>
+    <div class="footer-bottom">&copy; 2026 ATLAS STUDIO. Tous droits réservés.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

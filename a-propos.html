@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — ATLAS STUDIO</title>
+<meta name="description" content="Rencontrez le fondateur d'ATLAS STUDIO. Une obsession : créer des sites web premium au Bénin qui font vendre, pas juste des sites jolis.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR AVEC LOGO SVG -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="brand">
+    <svg viewBox="0 0 100 100" width="32" height="32" style="color: var(--text);">
+      <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="3.5"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="currentColor" stroke-width="3.5"/>
+      <path d="M 50 22 C 50 46, 52 48, 78 50 C 52 52, 50 54, 50 78 C 50 54, 48 52, 22 50 C 48 48, 50 46, 50 22 Z" fill="currentColor"/>
+    </svg>
+    <span class="brand-name">ATLAS STUDIO</span>
+  </a>
+  <button class="menu-btn" id="menuBtn">Menu</button>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" id="menuClose" aria-label="Fermer">&times;</button>
+  <nav class="menu-nav">
+    <a href="index.html">Accueil</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<!-- SECTION PHOTO + TEXTE -->
+<section class="section" style="padding-top:160px;padding-bottom:60px;">
+  <div class="container manifeste-grid">
+    <div class="manifeste-image reveal" style="height: 400px; border-radius: 12px;">
+      <img src="images/apropos.jpg" alt="Fondateur d'ATLAS STUDIO">
+    </div>
+    <div class="manifeste-text reveal reveal-delay-1">
+      <span class="eyebrow">Le fondateur</span>
+      <h1 style="margin-bottom: 24px;">Derrière ATLAS STUDIO, il y a une exigence.</h1>
+      <p>Je m'appelle Picard. J'ai créé ATLAS STUDIO avec une conviction simple : <strong>au Bénin, trop d'entreprises brillantes sont invisibles en ligne.</strong></p>
+      <br>
+      <p>Pas parce qu'elles manquent de qualité. Mais parce qu'elles n'ont pas un site à la hauteur de leur ambition. Un site qui rame, qui fait amateur, ou qui ne donne pas envie d'acheter.</p>
+      <br>
+      <p>Mon rôle, c'est de changer ça. Je construis des sites premium, pensés pour le mobile, écrits pour convertir. Chaque pixel, chaque mot a une raison d'être. Rien de plus. Rien de moins.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION MÉTHODE -->
+<section class="section services" style="background: var(--bg-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Ma méthode</span>
+      <h2>Trois principes. Zéro compromis.</h2>
+    </div>
+
+    <div class="service-list" style="grid-template-columns: 1fr;">
+      <div class="service-item reveal">
+        <h3>1. La Sobriété</h3>
+        <p>Pas de couleurs criardes. Pas d'effets inutiles. Un site élégant se remarque par ce qu'il ne fait pas. Le luxe, c'est le silence.</p>
+      </div>
+      <div class="service-item reveal">
+        <h3>2. La Rapidité</h3>
+        <p>Devis sous 24h. Site livré en 7 jours. Pas de délais qui traînent. Votre temps est précieux, le mien aussi.</p>
+      </div>
+      <div class="service-item reveal">
+        <h3>3. Le Résultat</h3>
+        <p>Un beau site qui ne vend pas est un échec. Chaque projet est pensé pour une seule chose : ramener des clients vers votre WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE VISUELLE (L'image du logo sur le mur) -->
+<section class="signature-section" style="margin-bottom: 60px;">
+  <img src="images/signature.jpg" alt="ATLAS STUDIO - Portez plus haut">
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container reveal">
+    <h2>Travaillons ensemble.</h2>
+    <p>Discutons de votre projet autour d'un message. Je réponds personnellement.</p>
+    <a href="https://wa.me/2290167020586" target="_blank" rel="noopener" class="btn">Discuter sur WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">ATLAS STUDIO</div>
+    <div class="footer-slogan">L'excellence digitale au Bénin.</div>
+    <div class="footer-contacts">
+      <a href="https://wa.me/2290167020586" target="_blank" rel="noopener">+229 01 67 02 05 86</a>
+      <a href="mailto:atlasstudio216@gmail.com">atlasstudio216@gmail.com</a>
+    </div>
+    <div class="footer-bottom">&copy; 2026 ATLAS STUDIO. Tous droits réservés.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

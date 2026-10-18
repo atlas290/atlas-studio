@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sitevitrine.atlasstudio.workers.dev/sitemap.xml
