@@ -1,5 +1,5 @@
 /* ============================================
-   ATLAS STUDIO V6 - Finalisation et correction iOS
+   ATLAS STUDIO V7 - Correction définitive Navbar
    ============================================ */
 
 /* --- Reset --- */
@@ -17,15 +17,15 @@
   --text: #f0e8dc;
   --text-dim: #d4c8b8;
   --gold: #c9a961;
-  --gold-light: #d9b-color86c;
+  --gold-light: #d9b86c;
   --gold-dark: #8a6d3b;
   --border: #2a2018;
-   --phone-border: #1c1814;
+  --phone-border: #1c1814;
   --shadow-heavy: rgba(0,0,0,0.8);
-  --shadow-light0: rgba(0,0,0,0.4);
+  --shadow-light: rgba(0,0,0,0.4);
   --ease: cubic-bezier(.19,1,.22,1);
-.  --ease-soft: cubic-bezier(.2,.7,.3,1);
-5}
+  --ease-soft: cubic-bezier(.2,.7,.3,1);
+}
 
 /* --- Variables : MODE CLAIR AUTOMATIQUE --- */
 @media (prefers-color-scheme: light) {
@@ -65,7 +65,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  transition: backgrounds ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 img { max-width: 100%; display: block; }
@@ -97,7 +97,7 @@ p { color: var(--text-dim); font-size: 16px; }
   text-transform: uppercase; color: var(--gold); margin-bottom: 20px; font-weight: 600;
 }
 
-/* --- Navbar (FORCÉE SUR UN CALQUE SÉPARÉ POUR ÉVITER LE GLITCH IOS) --- */
+/* --- Navbar (CORRIGÉE : FOND OPAQUE EN PERMANENCE) --- */
 .navbar {
   position: fixed;
   top: 0;
@@ -108,18 +108,13 @@ p { color: var(--text-dim); font-size: 16px; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: background 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
-  border-bottom: 1px solid transparent;
-  background: transparent;
-  /* Les 2 lignes magiques pour le bug iOS */
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  background: var(--bg); /* Le fond est TOUJOURS plein, plus de bug */
+  border-bottom: 1px solid var(--border);
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar.scrolled {
-  background: var(--bg);
   padding: 12px 24px;
-  border-bottom: 1px solid var(--border);
   box-shadow: 0 4px 15px var(--shadow-light);
 }
 
