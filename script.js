@@ -122,7 +122,7 @@
     var ctx = canvas.getContext('2d');
     
     var drops = [];
-    var maxDrops = 50;
+    var maxDrops = 60;
 
     function resize() {
         canvas.width = window.innerWidth;
@@ -137,10 +137,9 @@
         drops.push({
             x: x,
             y: y,
-            radius: 0,
-            maxRadius: Math.random() * 40 + 20,
+            radius: 2, // On démarre avec un petit point
             life: 1.0,
-            decay: Math.random() * 0.02 + 0.015
+            decay: 0.02 // La goutte s'efface un peu plus lentement
         });
         
         if (drops.length > maxDrops) {
@@ -148,10 +147,18 @@
         }
     }
 
+    // Souris (PC)
     window.addEventListener('mousemove', function(e) {
         createDrop(e.clientX, e.clientY);
     });
 
+    // Tactile (Mobile) - Au toucher
+    window.addEventListener('touchstart', function(e) {
+        var touch = e.touches[0];
+        createDrop(touch.clientX, touch.clientY);
+    }, { passive: true });
+
+    // Tactile (Mobile) - Quand on glisse le doigt
     window.addEventListener('touchmove', function(e) {
         var touch = e.touches[0];
         createDrop(touch.clientX, touch.clientY);
@@ -162,14 +169,16 @@
 
         for (var i = 0; i < drops.length; i++) {
             var d = drops[i];
-            d.radius += 2;
+            d.radius += 2.5; // L'onde s'agrandit plus vite
             d.life -= d.decay;
 
             if (d.life > 0) {
                 ctx.beginPath();
                 ctx.arc(d.x, d.y, d.radius, 0, Math.PI * 2);
-                ctx.strokeStyle = 'rgba(201, 169, 97, ' + (d.life * 0.5) + ')';
-                ctx.lineWidth = 1.5;
+                
+                // Couleur or (201, 169, 97) BEAUCOUP plus visible
+                ctx.strokeStyle = 'rgba(201, 169, 97, ' + d.life + ')';
+                ctx.lineWidth = 2; // Trait plus épais
                 ctx.stroke();
             }
         }
