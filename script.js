@@ -114,3 +114,69 @@
     })(videos[i]);
   }
 })();
+
+// --- EFFET GOUTTE D'EAU (Canvas) ---
+(function() {
+    var canvas = document.getElementById('trail-canvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    
+    var drops = [];
+    var maxDrops = 50;
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function createDrop(x, y) {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        drops.push({
+            x: x,
+            y: y,
+            radius: 0,
+            maxRadius: Math.random() * 40 + 20,
+            life: 1.0,
+            decay: Math.random() * 0.02 + 0.015
+        });
+        
+        if (drops.length > maxDrops) {
+            drops.shift();
+        }
+    }
+
+    window.addEventListener('mousemove', function(e) {
+        createDrop(e.clientX, e.clientY);
+    });
+
+    window.addEventListener('touchmove', function(e) {
+        var touch = e.touches[0];
+        createDrop(touch.clientX, touch.clientY);
+    }, { passive: true });
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (var i = 0; i < drops.length; i++) {
+            var d = drops[i];
+            d.radius += 2;
+            d.life -= d.decay;
+
+            if (d.life > 0) {
+                ctx.beginPath();
+                ctx.arc(d.x, d.y, d.radius, 0, Math.PI * 2);
+                ctx.strokeStyle = 'rgba(201, 169, 97, ' + (d.life * 0.5) + ')';
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+            }
+        }
+
+        drops = drops.filter(function(d) { return d.life > 0; });
+        requestAnimationFrame(animate);
+    }
+    
+    animate();
+})();
