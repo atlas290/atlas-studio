@@ -3,13 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services — ATLAS STUDIO</title>
-<meta name="description" content="Découvrez les formules de sites web premium d'ATLAS STUDIO. Menu Digital dès 50 000 FCFA, Starter à 100 000 FCFA, Pro à 200 000 FCFA.">
+<title>FAQ — ATLAS STUDIO</title>
+<meta name="description" content="Questions fréquentes sur les services d'ATLAS STUDIO : délais, tarifs, paiement, hébergement, maintenance.">
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+.faq-item summary { list-style: none; cursor: pointer; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; letter-spacing: 0.04em; color: var(--text); position: relative; padding-right: 40px; line-height: 1.35; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; position: absolute; right: 0; top: 0; color: var(--gold); font-size: 28px; font-weight: 300; transition: transform 0.3s; }
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item p { margin-top: 16px; font-size: 16px; line-height: 1.7; color: var(--text-dim); }
+</style>
 </head>
 <body>
 
@@ -39,144 +47,67 @@
 
 <section class="section" style="padding-top:160px;padding-bottom:40px;text-align:center;">
   <div class="container reveal">
-    <span class="eyebrow">Nos Offres</span>
-    <h1 style="margin-bottom:16px;">Des solutions pour chaque ambition.</h1>
-    <p style="max-width:520px;margin:0 auto;font-size:16px;">Du simple menu digital au site sur-mesure. Choisissez votre formule, sans frais cachés.</p>
+    <span class="eyebrow">FAQ</span>
+    <h1 style="margin-bottom:16px;">Questions fréquentes.</h1>
+    <p style="max-width:480px;margin:0 auto;font-size:16px;">Tout ce que vous devez savoir avant de lancer votre projet avec nous.</p>
   </div>
 </section>
 
 <section class="section" style="padding-top:40px;">
   <div class="container">
+    
+    <details class="faq-item reveal">
+      <summary>Quelles sont les différences entre vos offres ?</summary>
+      <p>L'offre <strong>Menu Digital</strong> est une page unique pour les restaurants, avec le menu et le bouton de commande WhatsApp (à partir de 50 000 FCFA). L'offre <strong>Starter (100 000 FCFA)</strong> est un site de 3 pages pour tout type de business. L'offre <strong>Pro (200 000 FCFA)</strong> est notre best-seller : 5 pages, galerie/menu, et intégration WhatsApp, avec domaine inclus. Enfin, l'offre <strong>Signature (350 000 FCFA)</strong> est un site sur-mesure de 10 pages avec des animations exclusives.</p>
+    </details>
 
-    <div class="service-item reveal" style="padding:40px 24px;text-align:left;margin-bottom:60px; border: 2px solid var(--gold); position: relative;">
-      <div style="position:absolute; top:-15px; right:24px; background:var(--gold); color:var(--bg); font-size:11px; font-weight:600; letter-spacing:0.1em; padding:6px 16px; border-radius:100px;">SPÉCIAL RESTAURANTS</div>
-      
-      <span class="eyebrow">Offre Menu Digital</span>
-      <h3 style="font-size:32px;margin-bottom:12px;">Votre menu, enfin lisible.</h3>
-      <p style="font-size:16px;line-height:1.7;margin-bottom:24px;">
-        <strong>Le problème :</strong> Aujourd'hui, la seule façon de voir votre menu en ligne, ce sont des photos prises de travers par des clients sur Google Maps.<br><br>
-        <strong>La solution :</strong> Un lien unique (dans votre bio Instagram ou un QR code sur les tables). Le client clique, voit le menu avec de belles photos, et commande sur votre WhatsApp.
-      </p>
+    <details class="faq-item reveal">
+      <summary>Pourquoi le prix du Menu Digital change-t-il ?</summary>
+      <p>Parce que tous les menus ne se valent pas en termes de travail. Un menu de 20 plats prend moins de temps qu'un menu de 200 plats avec les vins. Notre grille est simple : jusqu'à 50 articles (50 000 FCFA), de 51 à 120 articles (75 000 FCFA), et de 121 à 200 articles (100 000 FCFA). Au-delà, c'est sur devis. Le domaine, l'hébergement et le QR code sont inclus.</p>
+    </details>
 
-      <div style="background:var(--bg-2); padding:24px; border-radius:8px; margin-bottom:32px;">
-        <h4 style="margin-bottom:16px; font-size:20px;">Tarifs selon la taille du menu :</h4>
-        <ul style="list-style:none; padding:0; margin:0;">
-          <li style="display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--border);">
-            <span><strong>Jusqu'à 50 articles</strong></span>
-            <span style="color:var(--gold); font-weight:bold;">50 000 FCFA</span>
-          </li>
-          <li style="display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--border);">
-            <span><strong>51 à 120 articles</strong></span>
-            <span style="color:var(--gold); font-weight:bold;">75 000 FCFA</span>
-          </li>
-          <li style="display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--border);">
-            <span><strong>121 à 200 articles</strong></span>
-            <span style="color:var(--gold); font-weight:bold;">100 000 FCFA</span>
-          </li>
-          <li style="display:flex; justify-content:space-between; padding:12px 0;">
-            <span><strong>Plus de 200 articles</strong></span>
-            <span style="color:var(--gold); font-weight:bold;">Sur devis</span>
-          </li>
-        </ul>
-        <p style="font-size:13px; margin-top:16px; color:var(--text-dim); line-height: 1.5;">
-          *Domaine et hébergement 1 an inclus. QR code inclus.<br>
-          *Le client fournit le menu (PDF/texte) sinon +10 000 F de saisie.<br>
-          *Prix de lancement : -20% pour les 3 premiers clients en échange d'un témoignage.
-        </p>
-      </div>
+    <details class="faq-item reveal">
+      <summary>Combien de temps pour avoir mon site ?</summary>
+      <p>7 jours en moyenne pour les offres Menu, Starter et Pro. 10 à 14 jours pour l'offre Signature. Le délai démarre une fois tous les textes et images fournis.</p>
+    </details>
 
-      <ul class="feature-list">
-        <li>1 page ultra-rapide avec onglets (Entrées, Plats, Vins...)</li>
-        <li>Belles photos de vos plats</li>
-        <li>Bouton "Commander" qui ouvre WhatsApp</li>
-        <li>Lien à mettre dans votre bio et QR code</li>
-        <li>Hébergement inclus 1 an</li>
-      </ul>
-      <a href="https://wa.me/2290167020586?text=Bonjour,%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Menu%20Digital." target="_blank" rel="noopener" class="btn" style="width: 100%;">Demander une démo</a>
-    </div>
+    <details class="faq-item reveal">
+      <summary>Puis-je payer en plusieurs fois ?</summary>
+      <p>Oui. 50 % à la commande pour lancer le projet, 50 % à la livraison finale. Pour les projets importants (Signature), on peut échelonner en 3 fois.</p>
+    </details>
 
-    <div class="service-item reveal" style="padding:40px 24px;text-align:left;margin-bottom:40px; position: relative;">
-      <div style="position:absolute; top:-15px; right:24px; background:var(--border); color:var(--text); font-size:11px; font-weight:600; letter-spacing:0.1em; padding:6px 16px; border-radius:100px;">POUR TOUT BUSINESS</div>
-      <span class="eyebrow">Offre 02</span>
-      <h3 style="font-size:32px;margin-bottom:12px;">Le Starter</h3>
-      <p class="price">100 000 FCFA</p>
-      <p style="font-size:16px;line-height:1.7;margin-bottom:24px;">L'essentiel pour exister en ligne. Parfait pour les coiffeurs, couturiers, artisans ou consultants.</p>
-      <ul class="feature-list">
-        <li>Site vitrine de 3 pages</li>
-        <li>Design premium mobile-first</li>
-        <li>Bouton WhatsApp direct</li>
-        <li>Formulaire de contact simple</li>
-        <li>Hébergement 1 an inclus</li>
-      </ul>
-      <a href="contact.html" class="btn btn-ghost">Commander le Starter</a>
-    </div>
+    <details class="faq-item reveal">
+      <summary>Quels moyens de paiement acceptez-vous ?</summary>
+      <p>Mobile Money (MTN, Moov, Celtiis), virement bancaire, ou espèces.</p>
+    </details>
 
-    <div class="service-item reveal" style="padding:40px 24px;text-align:left;margin-bottom:40px; border: 1px solid var(--gold); position: relative;">
-      <div style="position:absolute; top:-15px; right:24px; background:var(--gold); color:var(--bg); font-size:11px; font-weight:600; letter-spacing:0.1em; padding:6px 16px; border-radius:100px;">LE PLUS CHOISI</div>
-      <span class="eyebrow">Offre 03</span>
-      <h3 style="font-size:32px;margin-bottom:12px;">Le Pro</h3>
-      <p class="price">200 000 FCFA</p>
-      <p style="font-size:16px;line-height:1.7;margin-bottom:24px;">Le site parfait pour un restaurant, un hôtel ou une PME qui veut dominer sa catégorie.</p>
-      <ul class="feature-list">
-        <li>Site vitrine de 5 pages sur-mesure</li>
-        <li>Galerie photos ET Menu interactif</li>
-        <li>Réservation ET Commande WhatsApp</li>
-        <li>Nom de domaine + Hébergement 1 an inclus</li>
-        <li>Google Maps ET Fiche Google Business Profile</li>
-      </ul>
-      <a href="contact.html" class="btn">Commander le Pro</a>
-    </div>
+    <details class="faq-item reveal">
+      <summary>Le nom de domaine et l'hébergement sont inclus ?</summary>
+      <p>Oui, pour 1 an, dans les offres Pro et Signature. Pour les offres Starter et Menu, l'hébergement est inclus, et le domaine est offert la première année. Ensuite, on s'occupe du renouvellement pour environ 30 000 FCFA par an.</p>
+    </details>
 
-    <div class="service-item reveal" style="padding:40px 24px;text-align:left;margin-bottom:40px;">
-      <span class="eyebrow">Offre 04</span>
-      <h3 style="font-size:32px;margin-bottom:12px;">Le Signature</h3>
-      <p class="price">350 000 FCFA</p>
-      <p style="font-size:16px;line-height:1.7;margin-bottom:24px;">Pour les entreprises haut de gamme. Un site exclusif qui impressionne vos concurrents.</p>
-      <ul class="feature-list">
-        <li>Site de 7 à 10 pages sur-mesure</li>
-        <li>Animations premium et design exclusif</li>
-        <li>Tout ce qui est inclus dans l'offre Pro</li>
-        <li>Formation 1h pour gérer votre site</li>
-        <li>Suivi prioritaire</li>
-      </ul>
-      <a href="contact.html" class="btn btn-ghost">Commander le Signature</a>
-    </div>
+    <details class="faq-item reveal">
+      <summary>Qu'est-ce que la maintenance à 10 000 FCFA/mois ?</summary>
+      <p>C'est la tranquillité d'esprit. On s'occupe de l'hébergement, des sauvegardes, et on fait jusqu'à 2 modifications par mois (changer un plat sur le menu, une photo, un texte). Support WhatsApp sous 48h. Sans engagement.</p>
+    </details>
 
-  </div>
-</section>
+    <details class="faq-item reveal">
+      <summary>Puis-je ajouter des options plus tard ?</summary>
+      <p>Oui. Google Maps, galerie photos, réservation WhatsApp... Vous pouvez ajouter n'importe quelle option à tout moment, même après la livraison. Chaque ajout fait l'objet d'un devis.</p>
+    </details>
 
-<section class="section" style="background:var(--bg-2);">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Tranquillité d'esprit</span>
-      <h2>Votre site, entretenu.</h2>
-      <p>Votre site reste rapide, sécurisé et à jour. On s'occupe de tout.</p>
-    </div>
+    <details class="faq-item reveal" style="border-bottom:none;">
+      <summary>Que se passe-t-il si je ne suis pas satisfait ?</summary>
+      <p>On retravaille le design jusqu'à ce que ce soit parfait. On ne livre pas un site dont vous n'êtes pas fier.</p>
+    </details>
 
-    <div class="maintenance-card reveal">
-      <div class="maintenance-price">10 000 FCFA<span>/mois</span></div>
-      <p class="maintenance-desc">La tranquillité d'esprit. Votre site ne dort jamais.</p>
-
-      <ul class="feature-list" style="text-align:left;max-width:400px;margin:0 auto 32px;">
-        <li>Hébergement et nom de domaine</li>
-        <li>Sauvegardes mensuelles automatiques</li>
-        <li>Jusqu'à 2 modifications par mois (texte, photo, menu)</li>
-        <li>Support WhatsApp sous 48h</li>
-      </ul>
-
-      <a href="contact.html" class="btn">Activer la maintenance</a>
-
-      <p class="maintenance-note">Sans engagement. Résiliable à tout moment.</p>
-    </div>
-
-    <p class="hors-forfait reveal">Hors forfait : nouvelle page (20 000 FCFA), refonte design (50 000 FCFA), shooting photo, gestion réseaux sociaux. Chaque projet sur devis.</p>
   </div>
 </section>
 
 <section class="cta-final">
   <div class="container reveal">
-    <h2>Un projet en tête ?</h2>
-    <p>Réponse sous 24h. Sans engagement.</p>
+    <h2>Une autre question ?</h2>
+    <p>Posez-la directement. Je réponds personnellement sous 24h.</p>
     <a href="https://wa.me/2290167020586" target="_blank" rel="noopener" class="btn">Démarrer sur WhatsApp</a>
   </div>
 </section>
